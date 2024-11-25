@@ -9,9 +9,9 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
 
 with DAG(
-    dag_id="example_bash_operator",
+    dag_id="dags_bash_operator",
     schedule="0 0 * * *",
-    start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
+    start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
     catchup=False,
     tags=["test", "jiyoung"],
 ) as dag:
